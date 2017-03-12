@@ -8,9 +8,6 @@ export default class CircleSlider extends Component {
 
     this.state = {
       angle: this.props.value,
-      normalised: false,
-      dx: 0,
-      dy: 0,
     };
   }
 
@@ -20,14 +17,11 @@ export default class CircleSlider extends Component {
       onStartShouldSetPanResponderCapture: (e,gs) => true,
       onMoveShouldSetPanResponder: (e,gs) => true,
       onMoveShouldSetPanResponderCapture: (e,gs) => true,
-      onPanResponderMove: ({nativeEvent: {pageX,pageY,locationX,locationY} },gs) => {
-        if (this.state.normalised === false) {
-          this.setState({dx: pageX-locationX, dy: pageY-locationY, normalised: true});
-        }
-        else {
-          let a = this.cartesianToPolar(gs.moveX-this.state.dx, gs.moveY-this.state.dy);
-          this.setState({angle: a});
-        }
+      onPanResponderMove: (e,gs) => {
+        let xOrigin = this.props.xCenter - (this.props.dialRadius + this.props.btnRadius);
+        let yOrigin = this.props.yCenter - (this.props.dialRadius + this.props.btnRadius);
+        let a = this.cartesianToPolar(gs.moveX-xOrigin, gs.moveY-yOrigin);
+        this.setState({angle: a});
       }
     });
   }
@@ -65,7 +59,7 @@ export default class CircleSlider extends Component {
     let endCoord = this.polarToCartesian(this.state.angle);
 
     return (
-      <Svg onLayout={this.onLayout}
+      <Svg
         ref="circleslider"
         width={width}
         height={width}>
@@ -107,5 +101,7 @@ CircleSlider.defaultProps = {
   textColor: '#fff',
   textSize: 10,
   value: 0,
+  xCenter: Dimensions.get('window').width/2,
+  yCenter: Dimensions.get('window').height/2,
   onValueChange: x => x,
 }
