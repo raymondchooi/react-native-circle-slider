@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { PanResponder, View } from 'react-native'
+import { PanResponder, View, Dimensions } from 'react-native'
 import Svg, { Path, Circle, G, Text } from 'react-native-svg'
 
 export default class CircleSlider extends Component {

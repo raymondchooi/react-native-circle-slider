@@ -17,14 +17,17 @@ This component is built with `React Native 0.39+` and works for Android and iOS.
 
 Installation instructions [here.](https://github.com/react-native-community/react-native-svg)
 
-**Import CircleSlider.js**
+**Import CircleSlider.js(github)**
 ```javascript
 import CircleSlider from './CircleSlider';
 ```
-
+**Import CircleSlider(from npm)**
+```javascript
+import CircleSlider from 'CircleSlider';
+``
 ## Usage
 
-**Basic Usage**
+**Basic Usage(github file)**
 
 ```javascript
 import React, { Component } from 'react';
