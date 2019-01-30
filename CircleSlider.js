@@ -66,9 +66,9 @@ export default class CircleSlider extends Component {
         <Circle r={dR}
           cx={width/2}
           cy={width/2}
-          stroke='#eee'
-          strokeWidth={0.5}
-          fill='none'/>
+          stroke={this.props.strokeColor}
+          strokeWidth={this.props.strokeWidth}
+          fill={this.props.fillColor}/>
 
         <Path stroke={this.props.meterColor}
           strokeWidth={this.props.dialWidth}
@@ -99,6 +99,9 @@ CircleSlider.defaultProps = {
   dialWidth: 5,
   meterColor: '#0cd',
   textColor: '#fff',
+  fillColor: 'none',
+  strokeColor: '#fff',
+  strokeWidth: 0.5,
   textSize: 10,
   value: 0,
   xCenter: Dimensions.get('window').width/2,

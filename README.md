@@ -58,9 +58,12 @@ export default class CircleSliderContainer extends Component {
 | **dialRadius**       | *number*   | 130                 | The radius of the circle slider      |
 | **dialWidth**        | *number*   | 5                   | The width of the slider line         |
 | **meterColor**       | *string*   | '#0cd'              | The color of slider line             |
+| **fillColor**        | *string*   | 'none'              | The color of circle fill             |
 | **onValueChange**    | *function* | x => x              | Value to print on button (x=degrees) |
 | **textColor**        | *string*   | '#fff'              | The color of the button text         |
 | **textSize**         | *number*   | 10                  | The size of the button text          |
+| **strokeColor**      | *string*   | '#fff               | The color of stroke above the line   |
+| **strokeWidth**      | *number*   | 0.5                 | The size of stroke above the line    |
 | **value**            | *number*   | 0                   | The value of the slider (degrees)    |
 | **xCenter**          | *number*   | Screen center       | The x coordinates of rotation center |
 | **yCenter**          | *number*   | Screen center       | The y coordinates of rotation center |
