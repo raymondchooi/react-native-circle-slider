@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { PanResponder, View } from 'react-native'
+import { PanResponder, View, Dimensions } from 'react-native'
 import Svg, { Path, Circle, G, Text } from 'react-native-svg'
 
 export default class CircleSlider extends Component {
@@ -21,7 +21,12 @@ export default class CircleSlider extends Component {
         let xOrigin = this.props.xCenter - (this.props.dialRadius + this.props.btnRadius);
         let yOrigin = this.props.yCenter - (this.props.dialRadius + this.props.btnRadius);
         let a = this.cartesianToPolar(gs.moveX-xOrigin, gs.moveY-yOrigin);
+        
+        if(a>=this.props.limit){
+          this.setState({angle: this.props.limit});
+        }else{
         this.setState({angle: a});
+        }
       }
     });
   }
@@ -66,9 +71,9 @@ export default class CircleSlider extends Component {
         <Circle r={dR}
           cx={width/2}
           cy={width/2}
-          stroke='#eee'
-          strokeWidth={0.5}
-          fill='none'/>
+          stroke={this.props.strokeColor}
+          strokeWidth={this.props.strokeWidth}
+          fill={this.props.fillColor}/>
 
         <Path stroke={this.props.meterColor}
           strokeWidth={this.props.dialWidth}
@@ -99,8 +104,12 @@ CircleSlider.defaultProps = {
   dialWidth: 5,
   meterColor: '#0cd',
   textColor: '#fff',
+  fillColor: 'none',
+  strokeColor: '#fff',
+  strokeWidth: 0.5,
   textSize: 10,
   value: 0,
+  limit: 360,
   xCenter: Dimensions.get('window').width/2,
   yCenter: Dimensions.get('window').height/2,
   onValueChange: x => x,
