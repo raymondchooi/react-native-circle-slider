@@ -22,10 +22,10 @@ export default class CircleSlider extends Component {
         let yOrigin = this.props.yCenter - (this.props.dialRadius + this.props.btnRadius);
         let a = this.cartesianToPolar(gs.moveX-xOrigin, gs.moveY-yOrigin);
         
-        if(a>=this.props.limit){
+        if (a>=this.props.limit) {
           this.setState({angle: this.props.limit});
-        }else{
-        this.setState({angle: a});
+        } else {
+          this.setState({angle: a});
         }
       }
     });
