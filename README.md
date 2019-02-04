@@ -65,6 +65,7 @@ export default class CircleSliderContainer extends Component {
 | **strokeColor**      | *string*   | '#fff               | The color of stroke above the line   |
 | **strokeWidth**      | *number*   | 0.5                 | The size of stroke above the line    |
 | **value**            | *number*   | 0                   | The value of the slider (degrees)    |
+| **limit**            | *number*   | 360                 | The limit of the slider (degrees)    |
 | **xCenter**          | *number*   | Screen center       | The x coordinates of rotation center |
 | **yCenter**          | *number*   | Screen center       | The y coordinates of rotation center |
 
