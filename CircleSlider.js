@@ -65,7 +65,6 @@ export default class CircleSlider extends Component {
 
     return (
       <Svg
-        ref="circleslider"
         width={width}
         height={width}>
         <Circle r={dR}
