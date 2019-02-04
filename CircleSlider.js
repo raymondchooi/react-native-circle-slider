@@ -22,8 +22,10 @@ export default class CircleSlider extends Component {
         let yOrigin = this.props.yCenter - (this.props.dialRadius + this.props.btnRadius);
         let a = this.cartesianToPolar(gs.moveX-xOrigin, gs.moveY-yOrigin);
         
-        if (a>=this.props.limit) {
-          this.setState({angle: this.props.limit});
+        if (a<=this.props.min) {
+          this.setState({angle: this.props.min});
+        } else if (a>=this.props.max) {
+          this.setState({angle: this.props.max});
         } else {
           this.setState({angle: a});
         }
@@ -108,7 +110,8 @@ CircleSlider.defaultProps = {
   strokeWidth: 0.5,
   textSize: 10,
   value: 0,
-  limit: 360,
+  min: 0,
+  max: 359,
   xCenter: Dimensions.get('window').width/2,
   yCenter: Dimensions.get('window').height/2,
   onValueChange: x => x,
