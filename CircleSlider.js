@@ -87,7 +87,7 @@ export default class CircleSlider extends Component {
             fill={this.props.meterColor}
             {...this._panResponder.panHandlers}/>
           <Text x={bR}
-            y={bR-(this.props.textSize/2)}
+            y={bR+(this.props.textSize/2)}
             fontSize={this.props.textSize}
             fill={this.props.textColor}
             textAnchor="middle"
