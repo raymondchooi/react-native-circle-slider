@@ -24,7 +24,7 @@ import CircleSlider from './CircleSlider';
 **Import CircleSlider(from npm)**
 ```javascript
 import CircleSlider from 'CircleSlider';
-``
+```
 ## Usage
 
 **Basic Usage(github file)**
