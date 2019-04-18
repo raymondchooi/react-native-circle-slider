@@ -52,23 +52,23 @@ export default class CircleSliderContainer extends Component {
 
 ## Properties
 
-| Property name        | Type       | Default             | Description                             |
-| ---                  | ---        | ---                 | ---                                     |
-| **btnRadius**        | *number*   | 15                  | The radius of the small button          |
-| **dialRadius**       | *number*   | 130                 | The radius of the circle slider         |
-| **dialWidth**        | *number*   | 5                   | The width of the slider line            |
-| **meterColor**       | *string*   | '#0cd'              | The color of slider line                |
-| **fillColor**        | *string*   | 'none'              | The color of circle fill                |
-| **onValueChange**    | *function* | x => x              | Value to print on button (x=degrees)    |
-| **textColor**        | *string*   | '#fff'              | The color of the button text            |
-| **textSize**         | *number*   | 10                  | The size of the button text             |
-| **strokeColor**      | *string*   | '#fff               | The color of stroke above the line      |
-| **strokeWidth**      | *number*   | 0.5                 | The size of stroke above the line       |
-| **value**            | *number*   | 0                   | The start value of the slider (degrees) |
-| **min**              | *number*   | 0                   | The min limit of the slider (degrees)   |
-| **max**              | *number*   | 359                 | The max limit of the slider (degrees)   |
-| **xCenter**          | *number*   | Screen center       | The x coordinates of rotation center    |
-| **yCenter**          | *number*   | Screen center       | The y coordinates of rotation center    |
+| Property name        | Type       | Default             | Description                           |
+| ---                  | ---        | ---                 | ---                                   |
+| **btnRadius**        | *number*   | 15                  | The radius of the small button        |
+| **dialRadius**       | *number*   | 130                 | The radius of the circle slider       |
+| **dialWidth**        | *number*   | 5                   | The width of the slider line          |
+| **meterColor**       | *string*   | '#0cd'              | The color of slider line              |
+| **fillColor**        | *string*   | 'none'              | The color of circle fill              |
+| **onValueChange**    | *function* | x => x              | Value to print on button (x=degrees)  |
+| **textColor**        | *string*   | '#fff'              | The color of the button text          |
+| **textSize**         | *number*   | 10                  | The size of the button text           |
+| **strokeColor**      | *string*   | '#fff               | The color of stroke above the line    |
+| **strokeWidth**      | *number*   | 0.5                 | The size of stroke above the line     |
+| **value**            | *number*   | 0                   | The value of the slider (degrees)     |
+| **min**              | *number*   | 0                   | The min limit of the slider (degrees) |
+| **max**              | *number*   | 359                 | The max limit of the slider (degrees) |
+| **xCenter**          | *number*   | Screen center       | The x coordinates of rotation center  |
+| **yCenter**          | *number*   | Screen center       | The y coordinates of rotation center  |
 
 ## Notes
 
