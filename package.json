@@ -1,0 +1,25 @@
+{
+	"name": "react-native-circle-slider",
+	"version": "1.0.0",
+	"description": "A React Native circle slider using react-native-svg",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/raymondchooi/react-native-circle-slider.git"
+	},
+	"keywords": [
+		"react native",
+		"circle slider",
+		"slider",
+		"input"
+	],
+	"author": "Raymond Chooi",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/raymondchooi/react-native-circle-slider/issues"
+	},
+	"homepage": "https://github.com/raymondchooi/react-native-circle-slider#readme",
+	"dependencies": {
+		"react-native-svg": "^12.1.0"
+	}
+}
