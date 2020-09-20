@@ -6,7 +6,7 @@
 
 ##### React native circle slider using [react-native-svg](https://github.com/react-native-community/react-native-svg) and [PanResponder](https://facebook.github.io/react-native/docs/panresponder.html).
 
-<img src="https://github.com/raymondchooi/react-native-circle-slider/blob/master/img/circleSliderPreview.gif" alt="Circle Slider preview" width="320px"></img>
+<img src="https://media.giphy.com/media/Att6gob5HMAxQuIOTy/giphy.gif" alt="Circle Slider preview" width="320px"></img>
 
 ## Install
 
