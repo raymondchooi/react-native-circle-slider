@@ -8,7 +8,7 @@ on:
 jobs:
   release:
     name: publish
-    runs-on: ubuntu-lateset
+    runs-on: ubuntu-latest
     steps:
       - name: checkout
         uses: actions/checkout@v2
