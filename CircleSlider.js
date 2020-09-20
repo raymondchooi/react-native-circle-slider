@@ -12,7 +12,7 @@ export default class CircleSlider extends Component {
 	}
 
 	componentDidMount() {
-		this._panResponder = PanResponder.create({
+		PanResponder.create({
 			onStartShouldSetPanResponder: (e, gs) => true,
 			onStartShouldSetPanResponderCapture: (e, gs) => true,
 			onMoveShouldSetPanResponder: (e, gs) => true,
