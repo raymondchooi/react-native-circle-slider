@@ -18,6 +18,12 @@ This component is built with `React Native 0.39+` and works for Android and iOS.
 npm i --save react-native-circle-slider
 ```
 
+**Install with [yarn](https://yarnpkg.com):**
+
+```sh
+$ yarn add react-native-circle-slider
+```
+
 ## Usage
 
 **Basic Usage(github file)**
