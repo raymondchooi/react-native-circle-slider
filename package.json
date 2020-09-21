@@ -1,6 +1,6 @@
 {
 	"name": "react-native-circle-slider",
-	"version": "2.3.0",
+	"version": "2.4.0",
 	"description": "A React Native circle slider using react-native-svg",
 	"main": "index.js",
 	"repository": {
