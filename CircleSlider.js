@@ -3,6 +3,7 @@ import { PanResponder, Dimensions } from "react-native";
 import Svg, { Path, Circle, G, Text } from "react-native-svg";
 
 export default class CircleSlider extends Component {
+	panResponder;
 	constructor(props) {
 		super(props);
 
@@ -10,7 +11,7 @@ export default class CircleSlider extends Component {
 			angle: this.props.value,
 		};
 
-		panResponder = PanResponder.create({
+		this.panResponder = PanResponder.create({
 			onStartShouldSetPanResponder: (e, gs) => true,
 			onStartShouldSetPanResponderCapture: (e, gs) => true,
 			onMoveShouldSetPanResponder: (e, gs) => true,
@@ -91,7 +92,7 @@ export default class CircleSlider extends Component {
 						cx={bR}
 						cy={bR}
 						fill={this.props.meterColor}
-						{...panResponder.panHandlers}
+						{...this.panResponder.panHandlers}
 					/>
 					<Text
 						x={bR}
