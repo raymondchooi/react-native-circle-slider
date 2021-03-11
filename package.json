@@ -20,12 +20,12 @@
 	},
 	"homepage": "https://github.com/raymondchooi/react-native-circle-slider#readme",
 	"dependencies": {
-		"react": "16.13.1",
-		"react-native": "0.63.2",
+		"react": "17.0.1",
+		"react-native": "0.63.4",
 		"react-native-svg": "^12.1.0"
 	},
 	"devDependencies": {
-		"@types/react": "^16.9.31",
-		"@types/react-native": "^0.62.1"
+		"@types/react": "^17.0.1",
+		"@types/react-native": "^0.63.4"
 	}
 }
