@@ -21,3 +21,4 @@ jobs:
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
