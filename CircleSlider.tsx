@@ -38,6 +38,7 @@ const CircleSlider: FC<Props> = ({
 	onValueChange = (x) => x,
 }) => {
 	const [angle, setAngle] = useState(value);
+	//diti tditit
 
 	const panResponder = useRef(
 		PanResponder.create({
