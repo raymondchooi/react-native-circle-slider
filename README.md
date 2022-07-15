@@ -10,7 +10,7 @@
 
 ## Install
 
-This component is built with `React Native 0.39+` and works for Android and iOS.
+This component is built with `React Native 0.69+` and works for Android and iOS.
 
 **Install with [npm](https://www.npmjs.com/):**
 
@@ -36,7 +36,13 @@ import CircleSlider from "react-native-circle-slider";
 export default class CircleSliderContainer extends Component {
 	render() {
 		return (
-			<View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+			<View
+				style={{
+					flex: 1,
+					justifyContent: "center",
+					alignItems: "center",
+				}}
+			>
 				<CircleSlider value={90} />
 			</View>
 		);
