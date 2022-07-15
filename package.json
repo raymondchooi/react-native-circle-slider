@@ -1,6 +1,6 @@
 {
 	"name": "react-native-circle-slider",
-	"version": "2.9.0",
+	"version": "2.9.1",
 	"description": "A React Native circle slider using react-native-svg",
 	"main": "index.ts",
 	"repository": {
@@ -20,12 +20,12 @@
 	},
 	"homepage": "https://github.com/raymondchooi/react-native-circle-slider#readme",
 	"peerDependencies": {
-		"react": ">=17.0.1",
-		"react-native": ">=0.63.4",
-		"react-native-svg": "^12.1.0"
+		"react": ">=18.0.0",
+		"react-native": ">=0.69.0",
+		"react-native-svg": "^12.3.0"
 	},
 	"devDependencies": {
-		"@types/react": "^17.0.1",
-		"@types/react-native": "^0.63.4"
+		"@types/react": "^18.0.15",
+		"@types/react-native": "^0.69.3"
 	}
 }
